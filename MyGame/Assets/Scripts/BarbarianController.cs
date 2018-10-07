@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarbarianController : MonoBehaviour {
-    Camera cam;
+public class BarbarianController : MonoBehaviour
+{
     public LayerMask movementMask;
     static Animator anim;
     public float speed = 10.0F;
+    public int maxRange = 5;
     public float rotationSpeed = 100.0F;
-    public Interactable focus;
 
-	// Use this for initialization
-	void Start () {
-        anim = GetComponent<Animator>();
-        cam = Camera.main;
-	}
+
+    // Use this for initialization
+    void Start()
+    {
+             anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-
         float translation = Input.GetAxis("Vertical") * speed;
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
         translation *= Time.deltaTime;
@@ -48,4 +48,18 @@ public class BarbarianController : MonoBehaviour {
             anim.SetTrigger("isJumping");
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Item"))
+        {
+
+            Destroy(other.gameObject);
+
+            Debug.Log("Collide");
+        }
+    }
+
 }
+

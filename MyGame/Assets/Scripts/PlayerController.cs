@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButton(0))
-        {
+      
+        
             float translation = Input.GetAxis("Vertical") * speed;
             float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
             translation *= Time.deltaTime;
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
             if(Physics.Raycast(ray, out hit, 100, movement))
             {
                 motor.MoveToPoint(hit.point);
-            }
+    
 
         }
 	}

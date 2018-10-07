@@ -115,8 +115,10 @@
     <Compile Include="Assets\Characters\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
     <Compile Include="Assets\Characters\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
     <Compile Include="Assets\Characters\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Math3d.cs" />
-    <Compile Include="Assets\Characters\Skeleton - Animated and Low Polygon\EnemyController.cs" />
     <Compile Include="Assets\Scripts\BarbarianController.cs" />
+    <Compile Include="Assets\Scripts\DestroyOther.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\EnemyFighting.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
@@ -124,10 +126,8 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ShowAlphaChannel.shader" />
     <None Include="Assets\Environment\Medieval Bridge\Shaders\Double sided.shader" />
@@ -138,9 +138,6 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\info.txt" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\MotionBlur.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
@@ -152,7 +149,6 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\FisheyeShader.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\frag_ao.cginc" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SSAOShader.shader" />
@@ -162,14 +158,11 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CreaseApply.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GlobalFog.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlur.shader" />
@@ -186,7 +179,6 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VortexEffect.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrain.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VignettingShader.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Tonemapper.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
@@ -198,7 +190,6 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SimpleClear.shader" />
-    <None Include="Assets\Environment\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
