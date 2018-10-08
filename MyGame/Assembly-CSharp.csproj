@@ -121,6 +121,7 @@
     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\detectHit.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
