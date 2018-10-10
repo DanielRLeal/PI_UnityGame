@@ -8,6 +8,8 @@ TagManager:
   - Inimigos
   - NPC
   - Item
+  - FightCollider
+  - PickCollider
   layers:
   - Default
   - TransparentFX

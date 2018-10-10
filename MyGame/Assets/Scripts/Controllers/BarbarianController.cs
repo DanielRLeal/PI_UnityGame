@@ -1,14 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class BarbarianController : MonoBehaviour
 {
+    private bool hasCollided = false;
     public LayerMask movementMask;
     static Animator anim;
     public float speed = 10.0F;
     public int maxRange = 5;
     public float rotationSpeed = 100.0F;
+    public Collider other;
+    public Slider healthBar;
 
 
     // Use this for initialization
@@ -16,10 +23,16 @@ public class BarbarianController : MonoBehaviour
     {
              anim = GetComponent<Animator>();
     }
+      
 
     // Update is called once per frame
     void Update()
     {
+        if (healthBar.value <= 0)
+        {
+            return;
+        }
+
         float translation = Input.GetAxis("Vertical") * speed;
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
         translation *= Time.deltaTime;
@@ -27,9 +40,33 @@ public class BarbarianController : MonoBehaviour
         transform.Translate(0, 0, translation);
         transform.Rotate(0, rotation, 0);
 
+
+      
+     
+        if (Input.GetKeyDown(KeyCode.T) && hasCollided==true)
+        {
+            Destroy(other.gameObject);
+        }
+
         if (Input.GetButtonDown("Fire3"))
         {
-            anim.SetTrigger("isRoundKicking");
+            int r = UnityEngine.Random.Range(0, 2);
+            if (r.Equals(0))
+            {
+                anim.SetTrigger("isRoundKicking");
+                anim.SetBool("isIdle", false);
+
+            }
+            if (r.Equals(1))
+            {
+                anim.SetTrigger("isLeftUpper");
+                anim.SetBool("isIdle", false);
+            }
+            if (r.Equals(2))
+            {
+                anim.SetTrigger("isRightHook");
+                anim.SetBool("isIdle", false);
+            }
         }
 
         if (translation != 0)
@@ -47,18 +84,31 @@ public class BarbarianController : MonoBehaviour
         {
             anim.SetTrigger("isJumping");
         }
-    }
 
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+        this.other = other;
         if (other.gameObject.CompareTag("Item"))
         {
 
-            Destroy(other.gameObject);
-
+            hasCollided = true;
             Debug.Log("Collide");
         }
+
+        healthBar.value -= 20;
+        if (healthBar.value <= 0)
+        {
+            anim.SetTrigger("isDead");
+        }
+
+    }
+
+    void OnTriggerExit(Collider other )
+    {
+        hasCollided = false;
+
     }
 
 }

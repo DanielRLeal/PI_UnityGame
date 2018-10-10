@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class detectHit : MonoBehaviour {
 
-    //public Slider healthBar;
+    public Slider healthBar;
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-      
-    //    Debug.Log("Hit");
-    //    healthBar.value -= 20;
-    //        if(healthBar <= 0)
-    //        {
-    //            anim.SetBool("isDead", true);
-    //        }
-        
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+
+        Debug.Log("Hit");
+        healthBar.value -= 20;
+        if (healthBar.value <= 0)
+        {
+            //anim.SetBool("isDead", true);
+        }
+
+    }
 
     // Use this for initialization
     void Start () {
