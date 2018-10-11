@@ -191,6 +191,7 @@
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
     <None Include="Assets\Characters\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
